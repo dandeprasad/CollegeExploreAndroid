@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        inActiveColor="#80000000"
+        activeColor="#c40707"
+        icon="@drawable/b_home_icon"
+        title="Home"
+        />
+
+    <tab
+        id="@+id/tab_news"
+        inActiveColor="#80000000"
+        activeColor="#c40707"
+        icon="@drawable/b_news_icon"
+        title="news"
+         />
+    <tab
+        id="@+id/tab_notifications"
+        inActiveColor="#80000000"
+        activeColor="#c40707"
+        icon="@drawable/b_notification_icon"
+        title="Notifications"
+
+        />
+    <tab
+        id="@+id/tab_usersetting"
+        inActiveColor="#80000000"
+        activeColor="#c40707"
+        icon="@drawable/b_user_icon"
+        title="Profile"
+       />
+</tabs>

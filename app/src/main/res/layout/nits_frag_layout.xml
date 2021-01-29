@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:id="@+id/sample_main_layout1">
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/nit_cardview1"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:thicknessRatio="1.9"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+
+        android.support.v7.cardview:contentPadding='2,2,2,0'>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewNits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+       />
+    </android.support.v7.widget.CardView>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:columnWidth="120dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="2dp"
+            android:horizontalSpacing="2dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            />
+
+    </ScrollView>
+
+</LinearLayout>

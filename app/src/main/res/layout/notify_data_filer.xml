@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@+id/hsv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+    android:measureAllChildren="false"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/LightGrey"
+
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="8sp"
+            >
+
+
+            <TextView
+                android:id="@+id/ALL_FILTER"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="arial"
+                android:maxLines="1"
+
+                android:textSize="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/app_theme"
+                android:padding="7dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_corner4"
+                android:text="@string/all"
+                android:gravity="center_horizontal"
+                android:elevation="5dp"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/NITS_FILTER"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="arial"
+                android:maxLines="1"
+                android:background="@drawable/rounded_corner4"
+                android:textSize="15dp"
+                android:textColor="@color/app_theme"
+                android:padding="7dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="5dp"
+                android:text="@string/nits"
+
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/IITS_FILTER"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="arial"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corner4"
+                android:text="@string/iits"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/app_theme"
+                android:padding="7dp"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/DEEMED_FILTER"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="arial"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corner4"
+                android:text="@string/deemed_universities"
+                android:textColor="@color/app_theme"
+                android:padding="7dp"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                />
+
+            <TextView
+                android:id="@+id/IIITS_FILTER"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="arial"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corner4"
+                android:text="@string/iiit_s"
+                android:textColor="@color/app_theme"
+                android:padding="7dp"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                />
+
+            <TextView
+                android:id="@+id/MORE_FILTERS"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="arial"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/more_filters"
+                android:background="@drawable/rounded_corner4"
+                android:textColor="@color/app_theme"
+                android:padding="7dp"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

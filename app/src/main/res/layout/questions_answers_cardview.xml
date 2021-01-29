@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:elevation="5dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/carrer_cardview"
+    app:cardCornerRadius="5dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="2dp"
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='3,3,3,3'
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/shownewsnotifyLayout">
+        <TextView
+            android:id="@+id/QuestionID"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#cdcbc2cf"
+            android:visibility="gone"
+            android:text=""
+
+            />
+        <TextView
+            android:id="@+id/QuestionSubjectTo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#cdcbc2cf"
+
+            android:text="New answer posted on MBA entrance Exam"
+
+            />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shownewsnotifyLayouttest1">
+        <TextView
+            android:id="@+id/fest_info1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+
+            android:textSize="12sp"
+
+            android:textColor="#cd4aece1"
+
+            android:text="Tags : "
+            />
+        <TextView
+            android:id="@+id/Tag1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+
+            android:textSize="8sp"
+
+            android:textColor="#cd01f9e8"
+            style="?android:listSeparatorTextViewStyle"
+            android:text="MBA Entrance Exam"
+            />
+        <TextView
+            android:id="@+id/Tag2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+
+            android:textSize="8sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#cd4aece1"
+            style="?android:listSeparatorTextViewStyle"
+            android:text="SSN School of Management(SSN SO..)"
+
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/MainQuestion"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+
+            android:textSize="15sp"
+
+            android:textColor="#cd2f0342"
+
+            android:text="Q: I have scored 682.5 and 90.95 percentile in mat may2017,but i didn't get a call letter .What is the minimum cut off for ssn"
+
+            />
+        <TextView
+            android:id="@+id/FollowsViews"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_margin="2dp"
+            android:textColor="#cd40294a"
+
+            android:text="2 Answers  .  1 follower  .  12 Views"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/alfpa"
+            android:orientation="horizontal"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+
+            android:alpha="0.7"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/userlogo"
+                    android:id="@+id/carduserImageimg"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="6dp"
+                    >
+                </ImageView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shownewsnotifyLayouttest12">
+
+            <TextView
+                android:id="@+id/UserAnswersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:text=""
+android:padding="4dp"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                />
+                <TextView
+                    android:id="@+id/UserAnswersMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:text="Guest User"
+                    android:padding="4dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/MainAnswer"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:textSize="15sp"
+
+            android:textColor="#cd40294a"
+
+            android:text=""
+            android:paddingRight="20dp"
+
+            />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shownewsnotifyLayouttest2">
+        <TextView
+            android:id="@+id/datePosted"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="8sp"
+
+            android:textColor="#cd40294a"
+
+            android:text="40 mins ago"
+            android:paddingRight="20dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like_button"
+            android:id="@+id/likebutton"
+            android:layout_margin="2dp"
+
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/countlike"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="1dp"
+
+            android:textSize="15sp"
+
+            android:textColor="#cd40294a"
+
+            android:text="0"
+            android:paddingRight="8sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unlike_button"
+            android:id="@+id/unlikebutton"
+            android:layout_margin="2dp"
+
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/countunlike"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="1dp"
+
+            android:textSize="15sp"
+
+            android:textColor="#cd40294a"
+
+            android:text="1"
+
+            />
+        </LinearLayout>
+        <include layout="@layout/view_line"/>
+
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shownewsnotifyLayouttest3">
+            <TextView android:id="@+id/ViewAllAnswers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ViewAnswers"
+                android:elevation="2dp"
+                android:textSize="17sp"
+                android:padding="4dp"
+                android:textColor="@color/app_theme"
+                android:layout_marginRight="3sp"
+
+                />
+        <TextView android:id="@+id/AnswerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:elevation="2dp"
+            android:textSize="17sp"
+            android:padding="4dp"
+            android:textColor="@color/app_theme"
+            android:layout_marginRight="3sp"
+
+            />
+        <TextView android:id="@+id/followButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:textSize="17sp"
+            android:padding="4dp"
+            android:elevation="2dp"
+            android:textColor="@color/app_theme"
+
+
+            />
+            <ImageButton
+                android:id="@+id/ShareButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+             android:background="@color/white"
+                app:srcCompat="@android:drawable/ic_menu_share" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

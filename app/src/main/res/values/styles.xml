@@ -1,0 +1,296 @@
+<resources>
+
+
+
+    <style name="Theme.Styled" parent="@style/Theme.AppCompat">
+        </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:text">Signin with Facebook</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="TextLabel" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/app_theme</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:actionMenuTextColor">@color/white</item>
+    <item name="android:fontFamily">arial</item>
+    </style>
+    <style name="AppTheme11" parent="Theme.AppCompat.DayNight">
+
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorControlHighlight">@color/app_theme_backgrndnew</item>
+        <item name="colorPrimaryDark">@color/app_theme_backgrndnew</item>
+        <item name="android:textColorPrimary">@color/app_theme</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/app_theme_backgrndnew</item>
+        <item name="android:fontFamily">arial</item>
+        <item name="android:navigationBarColor">@color/app_theme</item>
+        <item name="android:timePickerDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:datePickerDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogCustom</item>
+        <item name="android:textColorAlertDialogListItem">@style/AlertDialogCustom</item>
+
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="isLightTheme">false</item>
+        <item name="android:textColorPrimaryInverse">#850d0d</item>
+        <item name="colorAccent">@color/app_theme</item>
+        <item name="android:textColorSecondary">@color/app_theme</item>
+        <item name="android:textColorSecondaryInverse">#850d0d</item>
+        <item name="android:textColorTertiary">@color/app_theme</item>
+        <item name="android:textColorTertiaryInverse">#850d0d</item>
+        <item name="android:textColorHint">@color/app_theme</item>
+        <item name="android:textColorHintInverse">#850d0d</item>
+        <item name="android:textColorHighlight">#850d0d</item>
+
+
+        <item name="android:colorForeground">#606060</item>
+        <item name="android:colorForegroundInverse">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
+        <item name="colorBackgroundFloating">@color/white</item>
+
+
+
+        <item name="colorControlNormal">@color/app_theme</item>
+
+        <item name="colorButtonNormal">@color/app_theme</item>
+        <item name="colorSwitchThumbNormal">@color/blue_grey_500</item>
+
+
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="buttonStyle">@style/RobotoButtonStyle</item>
+        <!-- Used by MediaRouter -->
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+    <style name="TextLabel12" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+
+
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:textColorPrimary">@color/app_theme</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:fontFamily">arial</item>
+        <item name="android:navigationBarColor">@color/app_theme</item>
+        <item name="android:timePickerDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:datePickerDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogCustom</item>
+        <item name="android:textColorAlertDialogListItem">@style/AlertDialogCustom</item>
+
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="isLightTheme">false</item>
+        <item name="android:textColorPrimaryInverse">#850d0d</item>
+        <item name="colorAccent">@color/app_theme</item>
+        <item name="android:textColorSecondary">@color/app_theme</item>
+        <item name="android:textColorSecondaryInverse">#850d0d</item>
+        <item name="android:textColorTertiary">@color/app_theme</item>
+        <item name="android:textColorTertiaryInverse">#850d0d</item>
+        <item name="android:textColorHint">@color/app_theme</item>
+        <item name="android:textColorHintInverse">#850d0d</item>
+        <item name="android:textColorHighlight">#850d0d</item>
+
+
+        <item name="android:colorForeground">#606060</item>
+        <item name="android:colorForegroundInverse">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
+        <item name="colorBackgroundFloating">@color/white</item>
+
+
+
+        <item name="colorControlNormal">@color/app_theme</item>
+
+        <item name="colorButtonNormal">@color/app_theme</item>
+        <item name="colorSwitchThumbNormal">@color/blue_grey_500</item>
+
+
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="buttonStyle">@style/RobotoButtonStyle</item>
+        <!-- Used by MediaRouter -->
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+    <style name="SpinnerItem">
+        <item name="android:textColor">#ac6d90</item>
+        <!--<item name="android:background">@drawable/my_rectangle</item>-->
+    </style>
+    <style name="SpinnerDropDownItem">
+
+        <item name="android:textColor">@color/blue_grey_500</item>
+        <item name="android:textAlignment">center</item>
+      <!--  <item name="android:background">@drawable/my_rectangle</item>-->
+    </style>
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">arial</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">arial</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">arial</item>
+    </style>
+    <style name="Widget.Shrine.CollapsingToolbarImage" parent="">
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="Widget.Shrine.CollapsingToolbar" parent="">
+        <item name="collapsedTitleTextAppearance">@style/TextAppearance.Shrine.Logo</item>
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="expandedTitleGravity">top</item>
+        <item name="expandedTitleMarginStart">124dp</item>
+        <item name="expandedTitleMarginTop">140dp</item>
+        <item name="expandedTitleTextAppearance">@style/TextAppearance.Shrine.Logo</item>
+        <item name="scrimVisibleHeightTrigger">140dp</item>
+    </style>
+    <style name="Widget.Shrine.CollapsingToolbarContent" parent="">
+        <item name="android:layout_marginTop">160dp</item>
+        <item name="android:layout_marginLeft">124dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ThemeOverlay.Shrine.BottomNavigation" parent="">
+        <item name="colorPrimary">?attr/colorAccent</item>
+    </style>
+    <style name="TextAppearance.Shrine.Logo" parent="TextAppearance.AppCompat.Display3">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:minLines">3</item>
+        <item name="android:lines">4</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.Title" parent="TextAppearance.AppCompat.Display3">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">arial</item>
+        <item name="android:textColor">@color/app_theme</item>
+
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextLabel1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/app_theme1</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:fontFamily">arial</item>
+    </style>
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/blue_grey_500</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.AppAccent">
+        <item name="colorAccent">@color/app_theme</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="TextViewMyTheme" parent="TextAppearance.AppCompat.Title">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FF888888</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">29dp</item>
+        <item name="centered">true</item>
+    </style>
+        <style name="CustomLinePageIndicator">
+            <item name="strokeWidth">4dp</item>
+            <item name="lineWidth">30dp</item>
+            <item name="unselectedColor">#FF888888</item>
+            <item name="selectedColor">#FF880000</item>
+        </style>
+
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/Black</item>
+        <item name="colorControlActivated">@color/Black</item>
+    </style>
+    <style name="RatingBar1" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/Black</item>
+        <item name="colorControlActivated">@color/Green</item>
+    </style>
+    <style name="RatingBar2" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/Black</item>
+        <item name="colorControlActivated">@color/Orange</item>
+    </style>
+    <style name="RatingBar3" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/Red</item>
+        <item name="colorControlActivated">@color/Red</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="AlertDialogCustom" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorPrimary">#00397F</item>
+        <item name="android:colorAccent">#0AAEEF</item>
+    </style>
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#00f</item>
+    </style>
+</resources>

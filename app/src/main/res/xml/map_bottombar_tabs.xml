@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:elevation="http://schemas.android.com/tools">
+    <tab
+        id="@+id/near_by_colleges"
+        inActiveColor="#000000"
+        activeColor="#f40303"
+
+
+        title="Near By"
+        icon="@drawable/map_nearby"
+
+       />
+
+    <tab
+        id="@+id/tab_nearby"
+        inActiveColor="#000000"
+        activeColor="#f40303"
+        elevation="25dp"
+        title="User Activity"
+        icon="@drawable/map_recent"
+
+    />
+
+    <tab
+        id="@+id/tab_favorites1"
+        inActiveColor="#000000"
+        activeColor="#f40303"
+        elevation="25dp"
+        title="Filter"
+        icon="@drawable/map_filter"
+
+       />
+    <tab
+        id="@+id/map_environment"
+        inActiveColor="#000000"
+        activeColor="#ffffff"
+        elevation="25dp"
+        barColorWhenSelected="#00aa22"
+        badgeBackgroundColor="#00aa22"
+        title="Environment"
+        icon="@drawable/map_environment"
+
+        />
+    <tab
+        id="@+id/tab_favorites2"
+        inActiveColor="#000000"
+        activeColor="#f40303"
+        elevation="25dp"
+        title="Profile"
+        icon="@drawable/profile_bottomview"
+
+         />
+</tabs>

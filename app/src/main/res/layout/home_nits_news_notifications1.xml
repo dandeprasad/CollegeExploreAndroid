@@ -1,0 +1,30 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="60sp"
+    android:layout_height="60sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/carrer_cardview"
+    app:cardCornerRadius="30sp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:layout_margin="5sp"
+    android:elevation="13dp"
+    app:cardElevation="20dp"
+    android:background="#ffffff"
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='2,2,2,2'>
+
+    >
+<ImageView
+    android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+    android:id="@+id/imgmaps"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+></ImageView>
+
+
+
+
+</android.support.v7.widget.CardView>

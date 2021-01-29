@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e3e6ed"
+            android:id="@+id/carrerGuidance_layout_upper">
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerNewsNotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:layout_marginBottom="40dp"
+
+/>
+            <ProgressBar android:indeterminate="true"
+                android:layout_width="50dp" android:layout_height="50dp"
+                android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+                android:layout_gravity="center"
+
+                android:layout_centerInParent="true"
+                android:theme="@style/AppTheme.AppAccent"
+                android:visibility="gone"
+                />
+
+
+
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+android:scaleType="centerCrop"
+        android:src="@drawable/upload_button"
+        app:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="4dp"
+android:alpha="0.3"
+        android:id="@+id/news_askus"
+        android:layout_marginBottom="40dp"
+
+        android:layout_alignParentRight="true" />-->
+
+
+        </RelativeLayout>
+

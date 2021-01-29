@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="100dp"
+    android:id="@+id/cardfordirections"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/fab_margin"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="7dp"
+    app:cardBackgroundColor="#ffffff"
+
+    android:thicknessRatio="1.9"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+
+        android:layout_height="wrap_content"
+android:layout_width="match_parent"
+        android:background="@drawable/buttonbg"
+        android:padding="5dp"
+       >
+       <!-- android:paddingLeft="5dp"
+        android:paddingRight="5dp"-->
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:elevation="4dp"
+            android:id="@+id/clg_logo"
+            android:background="@color/white"
+            android:padding="4dp"
+
+
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/clg_name"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+
+            android:layout_toRightOf="@+id/clg_logo"
+            android:paddingTop="5dp"
+            android:textSize="16dp"
+            android:paddingBottom="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/clg_name"
+            android:layout_toRightOf="@+id/clg_logo"
+            android:id="@+id/lineeera"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/websitetext"
+                android:textColor="@color/Black"
+                android:layout_width="wrap_content"
+                android:text="@string/website"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/clg_website"
+                android:textColor="@color/Black"
+                android:layout_width="wrap_content"
+                android:autoLink="email"
+
+
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+      android:layout_marginLeft="3dp"
+       android:layout_below="@+id/lineeera">
+
+
+    <TextView
+        android:id="@+id/clg_place"
+        android:textColor="@color/Black"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/View_details"
+            android:textColor="@color/Black"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="gone"
+            android:text="@string/college_information"/>
+        <Button
+            android:id="@+id/clg_placeinfo"
+            android:textColor="#E6E6E6"
+            android:textStyle="italic"
+            android:paddingTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHighlight="#E6E6E6"
+            android:textSize="12dp"
+            android:text="@string/click_window_to_view_college_details_long_press_to_close_this"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>

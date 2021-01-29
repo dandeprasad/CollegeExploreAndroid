@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3e4a56"
+            android:elevation="4dp"
+            />
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search"
+android:elevation="4dp"
+            android:layout_width="match_parent"
+           android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+
+            android:background="#3e4a56"
+            android:layout_marginBottom="4dp"
+            />
+
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/search" />
+
+    </RelativeLayout>
+
+</layout>

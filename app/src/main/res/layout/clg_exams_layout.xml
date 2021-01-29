@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+android:layout_marginTop="5dp"
+    android:id="@+id/carrer_cardview"
+    app:cardCornerRadius="6dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="2dp"
+ android:fadingEdge="horizontal"
+    android:fadingEdgeLength="10dp"
+    android:thicknessRatio="1.9"
+
+    android.support.v7.cardview:contentPadding='3,3,3,3'
+    >
+    <ImageView
+        android:layout_height="130dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:id="@+id/newsimgtagy">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:clickable="true"
+    android:id="@+id/nitsView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_height="150dp"
+            android:layout_width="match_parent"
+android:visibility="gone"
+            android:id="@+id/newsimg">
+        </ImageView>
+    <ImageView
+
+        android:layout_height="75dp"
+        android:layout_width="match_parent"
+android:src="#fff"
+        android:id="@+id/newsimg1">
+    </ImageView>
+    <ImageView
+
+        android:layout_height="75dp"
+        android:layout_width="75dp"
+android:layout_marginLeft="4sp"
+        android:id="@+id/newsimglogo">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_toRightOf="@+id/newsimglogo"
+        android:orientation="vertical"
+        android:id="@+id/linearlay"
+        android:layout_marginBottom="4sp"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/CLG_NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+        android:maxLines="3"
+
+        android:ellipsize="end"
+        android:textColor="@color/OrangeRed"
+        android:textSize="20sp"
+android:layout_marginBottom="2sp"
+ />
+
+        <TextView
+            android:id="@+id/EXAM_NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="7dp"
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+
+            />
+
+
+    <TextView
+        android:id="@+id/EXAMID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        />
+
+</LinearLayout>
+    <ImageView
+
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:src="@drawable/notifybell"
+        android:layout_marginRight="2sp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentEnd="true"
+
+        android:id="@+id/notifyexams"
+        android:layout_alignParentRight="true">
+        </ImageView>
+    <!-- android:textColor="#909699"  -->
+    </RelativeLayout>
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_line1" />
+        <TextView
+            android:id="@+id/exam_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:textColor="@color/Gray"
+            android:textSize="13sp"
+android:text="@string/examination_date"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/examdate"
+           android:textStyle="bold"
+            android:padding="7dp"
+            android:textSize="20sp"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textinputborder1"
+            android:layout_height="wrap_content"
+            android:text="@string/date"/>
+        <TextView
+            android:id="@+id/otherimpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/Gray"
+            android:textSize="13sp"
+
+            />
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableLayout1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 2 columns -->
+            <TableRow
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+              android:layout_height="0dp"
+
+                android:layout_weight="1"
+            >
+
+                <TextView
+                    android:id="@+id/examdate1"
+                    android:textColor="@color/Black"
+android:layout_height="50dp"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/textinputborder1"
+                    android:layout_weight="0.7"
+                    android:text="@string/registration_starts_on"
+
+                    />
+
+                <TextView
+                    android:id="@+id/REG_START_DATE"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal|center_vertical"
+
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+
+                    android:layout_height="50dp"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:background="@drawable/textinputborder1"
+                    android:text="data" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1">
+            <TextView
+                android:id="@+id/examdate17"
+                android:textColor="@color/Black"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/textinputborder1"
+                android:layout_weight="0.7"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/registration_ends_on"
+
+                />
+
+                <TextView
+                android:id="@+id/REG_END_DATE"
+                android:layout_weight="0.3"
+                    android:layout_height="50dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/textinputborder1"
+                android:text="@string/data" />
+        </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1">
+        <TextView
+            android:id="@+id/examdate1jk"
+            android:textColor="@color/Black"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/textinputborder1"
+            android:layout_weight="0.7"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/result_date"
+
+            />
+
+                <TextView
+            android:id="@+id/RESULT_DATE"
+            android:layout_weight="0.3"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_height="50dp"
+
+            android:background="@drawable/textinputborder1"
+            android:text="@string/data" />
+    </TableRow>
+        </TableLayout>
+   <!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:alpha="0.7"
+        android:weightSum="3">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/examdate1"
+
+            android:padding="9dp"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            android:layout_marginLeft="10dp"
+
+
+            android:background="@drawable/textinputborder1"
+            android:layout_height="wrap_content"
+            android:text="Registration Starts On"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/REG_START_DATE"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/textinputborder2"
+            android:layout_height="wrap_content"
+            android:text="date"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/examdate17"
+
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="10dp"
+
+
+                android:background="@drawable/textinputborder1"
+                android:layout_height="wrap_content"
+                android:text="Registration Ends On  "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/REG_END_DATE"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/textinputborder2"
+                android:layout_height="wrap_content"
+                android:text="date"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/examdate1jk"
+
+                android:padding="9dp"
+                android:textSize="16sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="10dp"
+
+
+                android:background="@drawable/textinputborder1"
+                android:layout_height="wrap_content"
+                android:text="Result Date                   "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/RESULT_DATE"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/textinputborder2"
+                android:layout_height="wrap_content"
+                android:text="date"/>
+        </LinearLayout>
+        </LinearLayout>-->
+        <Button
+            android:id="@+id/EXAM_DETAILS"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:maxLines="3"
+android:text="@string/view_details"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background="@drawable/textinputborder2"
+
+            android:layout_marginBottom="2sp"
+            />
+        <TextView
+            android:id="@+id/POSTED_DATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+android:layout_gravity="end"
+            android:layout_margin="2dp"
+            android:textColor="@color/app_theme"
+            android:textSize="10sp"
+
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/tag_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/app_theme1"
+        android:elevation="15dp"
+        android:layout_gravity="left"
+        android:visibility="gone"
+        android:text="@string/loading" />
+
+</android.support.v7.widget.CardView>
+<!--    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/carrer_cardview"
+        layout="@layout/view_line1" />-->
+
+
+    <!-- android:textColor="#909699"  -->

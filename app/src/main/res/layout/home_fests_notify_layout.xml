@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/view_onclick_framecutt1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator1"
+        android:layout_width="match_parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e3e6ed"
+            android:id="@+id/carrerGuidance_layout_upper">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/PurenewsToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:elevation="5dp"
+                    app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+            </android.support.design.widget.AppBarLayout>
+                <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerNewsNotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+/>
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </LinearLayout>
+            <ProgressBar android:indeterminate="true"
+                android:layout_width="50dp" android:layout_height="50dp"
+                android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+                android:layout_gravity="center"
+
+                android:layout_centerInParent="true"
+                android:theme="@style/AppTheme.AppAccent"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/forregisterferstvisible"
+android:layout_gravity="bottom|right"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentEnd="true"
+        app:elevation="6dp"
+        android:layout_margin="5dp"
+
+        app:backgroundTint="@color/app_theme"
+        app:pressedTranslationZ="12dp"
+
+        android:visibility="visible"
+
+        android:src="@drawable/ic_add"
+
+        android:layout_alignParentRight="true" />
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_toLeftOf="@+id/fab"
+        android:id="@+id/fests_register"
+        app:cardCornerRadius="20sp"
+        android:layout_marginTop="10dp"
+        android:innerRadius="0dp"
+
+        android:elevation="13dp"
+        app:layout_scrollFlags="enterAlways"
+        app:cardElevation="20dp"
+        android:visibility="invisible"
+
+        android:thicknessRatio="1.9"
+        android.support.v7.cardview:contentPadding='2,2,2,2'
+      >
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgmaps"
+            android:textColor="@color/app_theme"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:background="?selectableItemBackgroundBorderless"
+          android:text="@string/register_your_fest"
+            ></TextView>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+    </FrameLayout>

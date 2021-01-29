@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/view_onclick_frameupload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/carrerGuidance_layout_upper">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/postQuesToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+<!--<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="6dp"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="4dp"
+    android:text="@string/user"/>
+
+</LinearLayout>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_email"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:text="Email "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/user_newsupload"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:fontFamily="arial"
+            android:text="NEWS"
+            android:textColor="@color/white"
+            android:background="@drawable/textinputborder7"
+            android:textSize="10sp"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="2sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Submit your college news and we will post it for you."
+            android:layout_margin="10dp"
+            android:textColor="@color/green_dark"
+            android:textSize="15dp"
+
+            android:textStyle="italic" />
+        <Button
+            android:id="@+id/uploadfestdata"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/textinputborder7"
+            android:layout_weight="0.5"
+            android:fontFamily="arial"
+            android:text="Fest Registration"
+            android:textColor="@color/white"
+
+            android:textSize="10sp"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="2sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Register your fest with us and we will push it to all the users subscribed for FESTS"
+            android:layout_margin="10dp"
+            android:textColor="@color/green_dark"
+            android:textSize="15dp"
+
+            android:textStyle="italic" />
+    </LinearLayout>
+    <!--<android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue_grey_500"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:textColor="@color/bottombar"
+            android:textColorHighlight="#ac6d90"
+            android:id="@+id/about"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:hint="About"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue_grey_500"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:layout_margin="10dp"
+            android:textColor="@color/bottombar"
+            android:textColorHighlight="#ac6d90"
+            android:id="@+id/About_description"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:maxLength="2000"
+
+            android:layout_height="wrap_content"
+            android:hint="Description"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/PostQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/textinputborder7"
+        android:layout_gravity="right"
+        android:layout_margin="7dp"
+        android:text="Submit" />
+-->
+
+
+</LinearLayout>
+
+    <ProgressBar android:indeterminate="true"
+        android:layout_width="50dp" android:layout_height="50dp"
+        android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+        android:layout_gravity="center"
+
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.AppAccent"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+</FrameLayout>

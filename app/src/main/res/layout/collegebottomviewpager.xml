@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/hsv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+    android:measureAllChildren="false"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+
+        <collegeexplore.view.SlidingTabLayout
+            android:id="@+id/sliding_tabs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/CollegeViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_line1" />
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/app_theme"
+            android:id="@+id/view112"
+            app:cardCornerRadius="10dp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+
+
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:id="@+id/bottom_img_sheet"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                >
+            </ImageView>
+        </android.support.v7.widget.CardView>
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_line1" />
+        <!--    <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+        android:background="@color/white"
+                android:id="@+id/mapimage"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                >
+            </ImageView>-->
+        <!--  <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/webView1"
+              android:layout_width="fill_parent"
+              android:layout_height="200sp"
+              />-->
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="spacing">10dp</dimen>
+    <dimen name="spacing2">5dp</dimen>
+    <dimen name="spacing7">1dp</dimen>
+    <dimen name="spacing1">10dp</dimen>
+    <dimen name="spacing4">0dp</dimen>
+    <dimen name="spacing5">8dp</dimen>
+    <dimen name="spacing6">20dp</dimen>
+
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="slide_handle_height">20dp</dimen>
+    <integer name="anim_duration_long">500</integer>
+    <dimen name="item_offset">6dp</dimen>
+    <dimen name="item_offset1">1dp</dimen>
+    <dimen name="spacing41">2dp</dimen>
+    <dimen name="shr_list_margin">12dp</dimen>
+    <dimen name="profile_width">40dp</dimen>
+    <dimen name="profile_height">40dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">5dp</dimen>
+    <dimen name="nav_header_height">80dp</dimen>
+    <dimen name="badge_count_textsize">8dp</dimen>
+
+</resources>

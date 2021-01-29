@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+       android:gravity="top|center"
+        android:textColor="@color/Black"
+        android:layout_marginBottom="15dp"
+        android:text="Apply your Filter"/>
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel"
+android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        android:background="@null"
+        />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/apply_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="6dp"
+        android:background="@color/app_theme"
+        android:text="Apply"
+        android:textColor="@color/white" />
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:cacheColorHint="#00000000"/>
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical" >
+
+</LinearLayout>-->
+</LinearLayout>

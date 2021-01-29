@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/carrer_cardview"
+    app:cardCornerRadius="0sp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+
+    android:elevation="13dp"
+    android:background="@color/white"
+    app:layout_scrollFlags="enterAlways"
+    app:cardElevation="20dp"
+
+
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='2,2,2,2'>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:id="@+id/carrerGuidance_layout_upper">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:clickable="true"
+        android:id="@+id/linearlay_first"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:text="@string/register_your_fest"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:text="Page 1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+          >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/fest_college_name"
+                android:layout_margin="10dp"
+
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:layout_height="wrap_content"
+                android:hint="@string/fest_college_name"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+          android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:id="@+id/college_website"
+                android:layout_height="wrap_content"
+                android:hint="College Website"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:id="@+id/college_location"
+
+                android:layout_height="wrap_content"
+                android:hint="Location(City/State)"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:id="@+id/fest_name"
+
+                android:layout_height="wrap_content"
+                android:hint="Fest Name/Event Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+<!--        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location(City/State)"
+
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />-->
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:id="@+id/fest_caption"
+                android:layout_height="wrap_content"
+                android:hint="Fest Caption"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:textColor="@color/blue_grey_500"
+            android:text="Fest Type"/>
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:dropDownWidth="match_parent"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:id="@+id/fest_email_add"
+                android:layout_height="wrap_content"
+                android:hint="Fest Email Address"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+            android:id="@+id/fest_description"
+            android:layout_height="wrap_content"
+            android:hint="Fest Description"/>
+
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/blue_grey_500"
+            android:textAllCaps="true"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+
+                android:layout_margin="10dp"
+
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:id="@+id/fest_depart"
+
+                android:layout_height="wrap_content"
+                android:hint="Fest Department"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner21"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+
+    android:id="@+id/button_selectpicLinear"
+    android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Logo/Banner Upload "
+                android:id="@+id/imagetext"
+                android:textColor="#ac6d90"
+                android:textColorHighlight="#ac6d90"
+                android:textStyle="bold" />
+            <ImageButton
+                android:id="@+id/button_selectpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/attachment"
+                 />
+</LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/button_selectpicLinear"
+                android:id="@+id/noImage"
+                android:textColor="#0b2a56"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Click To Upload File"
+                android:visibility="gone"
+                android:layout_below="@+id/button_selectpicLinear"
+                android:id="@+id/uploadButton" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/uploadButton"
+                android:id="@+id/messageText"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etxtUpload"
+                android:visibility="gone"
+                android:layout_below="@+id/uploadButton"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/button_selectpicLinear"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageLayout">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner21"
+        android:orientation="vertical"
+
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fest Images(Event/workshop...)"
+android:layout_margin="5dp"
+            android:textColor="#ac6d90"
+            android:textColorHighlight="#ac6d90"
+            android:textStyle="bold" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <!-- Capture picture button -->
+        <ImageButton
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/fest_image"
+            />
+        <ImageButton
+            android:id="@+id/btnCaptureVideo"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:src="@drawable/fest_video"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_toRightOf="@+id/btnCapturePicture"
+
+            android:layout_margin="10dp"/>
+    <ImageButton
+        android:id="@+id/fest_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/btnCaptureVideo"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/attachment"
+        />
+</RelativeLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preview"
+                    android:padding="10dp"
+                    android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/button_selectpicLinear"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageLayout1">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/button_selectpicLinear"
+            android:layout_height="wrap_content"
+            android:id="@+id/videolayout">
+
+        </LinearLayout>
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:padding="2dp"
+    android:textColor="@color/blue_grey_500"
+    android:text="Event Dates"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="@color/blue_grey_500"
+        android:textAllCaps="true"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:textColor="#ac6d90"
+            android:textColorHighlight="#ac6d90"
+            android:id="@+id/start_date"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Start Date"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="@color/blue_grey_500"
+        android:textAllCaps="true"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:textColor="#ac6d90"
+            android:textColorHighlight="#ac6d90"
+            android:id="@+id/end_date"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:hint="End Date"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:id="@+id/button_first"
+        android:layout_gravity="right|end"
+        android:text="Next"
+        android:background="@color/app_theme"
+        android:layout_height="50dp" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearlay_second"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="@string/register_your_fest"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:text="Page 2"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_event"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Fest Event"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_workshop"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Workshop"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_paper"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Paper Presentation"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_guest"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Fest Guests"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_sponsors"
+                    android:layout_margin="10dp"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Fest Sponsors"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_dead_registration"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Deadline Registration"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_Regis_fees"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Registration Fees"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/button_back_second"
+                    android:layout_gravity="right|end"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_theme"
+                    android:layout_alignParentLeft="true"
+                    android:text="Back"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/button_next_second"
+                    android:layout_gravity="right|end"
+                    android:background="@color/app_theme"
+                    android:layout_alignParentBottom="true"
+                    android:text="Next"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                   />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/linearlay_third"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="@string/register_your_fest"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:text="Page 3"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_website"
+                    android:layout_height="wrap_content"
+                    android:hint="Fest Website"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_regis_url"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Fest Registration URL"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_links"
+
+
+                    android:layout_height="wrap_content"
+                    android:hint="Facebook/Youtube/Twitter/App link's"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/button_back_third"
+                    android:background="@color/app_theme"
+                    android:layout_gravity="right|end"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Back"
+                    android:layout_height="50dp" />
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/button_next_third"
+                    android:layout_gravity="right|end"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/app_theme"
+                    android:layout_alignParentRight="true"
+                    android:text="Next"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearlay_fourth"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="@string/register_your_fest"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:text="Page 4"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/fest_reach"
+
+                    android:layout_height="wrap_content"
+                    android:hint="How to reach College/Venue"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/blue_grey_500"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+
+                    android:layout_margin="10dp"
+
+                    android:textColor="#ac6d90"
+                    android:textColorHighlight="#ac6d90"
+                    android:id="@+id/Fest_contact_persons"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Persons Details for queries"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/button_back_fourth"
+                    android:layout_gravity="right|end"
+                    android:background="@color/app_theme"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Back"
+                    android:layout_height="50dp"  />
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/button_next_fourth"
+                    android:layout_gravity="right|end"
+                    android:background="@color/app_theme"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Submit"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+    <ProgressBar android:indeterminate="true"
+        android:layout_width="50dp" android:layout_height="50dp"
+        android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+        android:layout_gravity="center"
+
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.AppAccent"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="125dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:id="@+id/view2"
+    app:cardCornerRadius="5dp"
+    android:padding="7dp"
+
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='2,2,2,2'>
+    <ImageView
+        android:id="@+id/examsbackfround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/allnotifications">
+
+        <TextView
+            android:id="@+id/examname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:padding="15dp"
+
+            android:textSize="12dp"
+            android:ellipsize="end"
+            android:layout_gravity="start"
+            android:textColor="#ffffff"
+            android:text="@string/college_explore"
+
+            />
+    <TextView
+        android:id="@+id/examdate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+android:fontFamily="sans-serif"
+        android:maxLines="2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+android:paddingBottom="5dp"
+        android:textSize="12dp"
+        android:ellipsize="end"
+        android:layout_gravity="start"
+        android:textColor="#80ffffff"
+        android:text="@string/college_explore"
+
+        />
+        <TextView
+            android:id="@+id/examdesc"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="12dp"
+            android:ellipsize="marquee"
+
+            android:singleLine="false"
+            android:layout_gravity="start"
+            android:textColor="#ffffff"
+            android:text="@string/college_explore"
+
+            />
+        <TextView
+            android:id="@+id/posteddate_news"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:padding="2dp"
+            android:layout_gravity="end"
+            android:textSize="6dp"
+            android:ellipsize="end"
+
+            android:textColor="#50000000"
+            android:text="@string/college_explore"
+
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

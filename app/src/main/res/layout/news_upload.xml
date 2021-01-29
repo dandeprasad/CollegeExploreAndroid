@@ -1,0 +1,337 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e6ed"
+    android:clickable="true"
+    android:id="@+id/userreview_relative">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/PurenewsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="5dp"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+  <!--  <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/appbar"
+        android:id="@+id/carrer_cardviewname"
+        app:cardCornerRadius="6sp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        app:contentPadding="5dp"
+
+        app:layout_scrollFlags="enterAlways"
+        app:cardElevation="4dp"
+
+
+        android:thicknessRatio="1.9"
+        android.support.v7.cardview:contentPadding='2,2,2,2'>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/college_name_review"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/appbar"
+        android:id="@+id/carrer_cardview1"
+        app:cardCornerRadius="6sp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        app:contentPadding="5dp"
+
+        app:layout_scrollFlags="enterAlways"
+        app:cardElevation="4dp"
+
+
+        android:thicknessRatio="1.9"
+        android.support.v7.cardview:contentPadding='2,2,2,2'>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/Facultyrelat123"
+
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:id="@+id/reveiwheadtext"
+        android:text="News Head Line:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textColor="@color/DarkRed"
+        android:id="@+id/reveiwhead"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/reveiwheadtext"
+
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4" />
+
+<!--<EditText
+    android:layout_width="match_parent"
+    android:id="@+id/reveiwhead"
+    android:layout_margin="5dp"
+    android:layout_below="@+id/ratingBar1"
+   android:inputType="textShortMessage"
+    android:layout_height="wrap_content" />-->
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/DarkRed"
+        android:id="@+id/riviewdata"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/riviewdatatext"
+
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+         />
+
+        <TextView
+            android:id="@+id/riviewdatatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reveiwhead"
+            android:layout_margin="5dp"
+            android:text="News Description:" />
+            <TextView
+                android:id="@+id/phnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/riviewdata"
+                android:layout_margin="5dp"
+                android:text="Phone Number:" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/DarkRed"
+                android:id="@+id/phnumberedit"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/phnumber"
+
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/carrer_cardview1"
+        android:id="@+id/carrer_cardview111"
+        app:cardCornerRadius="6sp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        app:contentPadding="5dp"
+
+        app:layout_scrollFlags="enterAlways"
+        app:cardElevation="4dp"
+
+
+        android:thicknessRatio="1.9"
+        android.support.v7.cardview:contentPadding='2,2,2,2'>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carrer_cardview1"
+        android:layout_margin="10dp"
+        android:id="@+id/user_rating_linear"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images/Videos related to NEWS"
+            android:layout_margin="5dp"
+            android:textColor="@color/app_theme"
+            android:textColorHighlight="@color/app_theme"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- Capture picture button -->
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                android:id="@+id/btnCapturePicturecardviwe"
+                app:cardCornerRadius="6sp"
+
+                android:innerRadius="90dp"
+                app:contentPadding="5dp"
+
+                app:layout_scrollFlags="enterAlways"
+                app:cardElevation="4dp"
+
+
+                android:thicknessRatio="1.9"
+                android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <ImageButton
+                android:id="@+id/btnCapturePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/cameraicon"
+                android:tint="@color/app_theme" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                android:id="@+id/btnCaptureVideocardviwe"
+                android:layout_toRightOf="@+id/btnCapturePicturecardviwe"
+                app:cardCornerRadius="6sp"
+                android:innerRadius="90dp"
+                app:contentPadding="5dp"
+
+                app:layout_scrollFlags="enterAlways"
+                app:cardElevation="4dp"
+
+
+                android:thicknessRatio="1.9"
+                android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <ImageButton
+                android:id="@+id/btnCaptureVideo"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/fest_video"
+                android:tint="@color/app_theme" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                android:id="@+id/review_from_galarycardviwe"
+                android:layout_toRightOf="@+id/btnCaptureVideocardviwe"
+                app:cardCornerRadius="6sp"
+
+                android:innerRadius="90dp"
+                app:contentPadding="5dp"
+
+                app:layout_scrollFlags="enterAlways"
+                app:cardElevation="4dp"
+
+
+                android:thicknessRatio="1.9"
+                android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <ImageButton
+                android:id="@+id/review_from_galary"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:tint="@color/app_theme"
+                android:layout_toRightOf="@+id/btnCaptureVideo"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/gallery" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:padding="10dp"
+            android:textSize="15dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_below="@+id/button_selectpicLinear"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageLayout1">
+
+        </LinearLayout>
+        </HorizontalScrollView>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_below="@+id/button_selectpicLinear"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageLayout">
+
+            </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_below="@+id/button_selectpicLinear"
+                android:layout_height="wrap_content"
+                android:id="@+id/videolayout">
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/button_selectpicLinear"
+            android:id="@+id/noImage"
+            android:textColor="@color/bottombar"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carrer_cardview111"
+android:elevation="5dp"
+
+        android:background="@color/Black"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="submit" />
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

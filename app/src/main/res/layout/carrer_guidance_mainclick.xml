@@ -1,0 +1,31 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shownewsnotifyLayout">
+
+<!--        <ImageView
+            android:layout_height="100dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/carrer_guidance_onclick"
+            android:src="@drawable/load_mask"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </ImageView>-->
+        <TextView
+            android:id="@+id/carrer_guidance_onclicktxt"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+
+
+            android:textSize="10dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="#cd40294a"
+
+            android:text="@string/college_explore"
+
+            android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+    </LinearLayout>
+

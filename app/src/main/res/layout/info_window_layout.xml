@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:background="@color/app_theme"
+   >
+
+    <TextView
+        android:id="@+id/College_name_infowd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:id="@+id/college_website_infowd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/DirectionsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/directions"
+        android:elevation="2dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="15dip"
+        android:background="@color/app_theme"
+        android:layout_margin="25dp"/>
+
+</LinearLayout>

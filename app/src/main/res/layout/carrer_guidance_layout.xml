@@ -1,0 +1,22 @@
+<ScrollView android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#3d455b"
+    android:layout_alignParentLeft="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <HorizontalScrollView
+        android:id="@+id/hscrll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TableLayout
+            android:id="@+id/table_main_carrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+        </TableLayout>
+
+    </HorizontalScrollView>
+</ScrollView>

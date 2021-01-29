@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/carrer_cardview"
+        app:cardCornerRadius="6sp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+
+        android:elevation="13dp"
+        app:layout_scrollFlags="enterAlways"
+        app:cardElevation="10dp"
+
+
+        android:thicknessRatio="1.9"
+        android.support.v7.cardview:contentPadding='2,2,2,2'>
+
+        >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:background="@drawable/ripple_effect"
+    android:clickable="true"
+    android:id="@+id/nitsView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/newsmaintext"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:maxLines="3"
+        android:padding="7dp"
+        android:fontFamily="serif-smallcaps"
+        android:background="@drawable/ripple_effect"
+        android:ellipsize="end"
+        android:textColor="@color/app_theme"
+        android:textSize="16sp"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/newsmaintext"
+    android:id="@+id/newlenairlay"
+    android:background="@drawable/ripple_effect"
+    android:orientation="horizontal">
+        <ImageView
+            android:layout_height="110dp"
+            android:layout_width="match_parent"
+android:layout_weight="1"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/newsimg">
+        </ImageView>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_toRightOf="@+id/newsimg"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/newstext"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+android:layout_centerHorizontal="true"
+        android:paddingLeft="7dp"
+        android:background="@drawable/ripple_effect"
+        android:maxLines="6"
+        android:fontFamily="arial"
+
+
+        android:ellipsize="end"
+        android:textColor="@color/app_theme"
+        android:textSize="12sp"
+
+ />
+    <TextView
+        android:id="@+id/PostedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_below="@+id/newstext"
+        android:layout_margin="2dp"
+        android:fontFamily="arial"
+        android:background="@drawable/ripple_effect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/app_theme"
+        android:textSize="10sp"
+
+        />
+</RelativeLayout>
+</LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/newsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        />
+
+    <!-- android:textColor="#909699"  -->
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+
+        android:title="@string/nit_s"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_schedules"
+        android:enabled="true"
+
+        android:title="@string/iit_s"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_music"
+        android:enabled="true"
+
+        android:title="@string/deemed_univ"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_favorites1"
+        android:enabled="true"
+
+        android:title="@string/text_favorites"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_schedules1"
+        android:enabled="true"
+
+        android:title="@string/text_schedules"
+        app:showAsAction="ifRoom" />
+
+</menu>

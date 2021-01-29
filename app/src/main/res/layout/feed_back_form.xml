@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/carrerGuidance_layout_upper">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/postQuesToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_email"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:text="Email "/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue_grey_500"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:layout_margin="10dp"
+            android:maxLines="2"
+            android:textColor="@color/bottombar"
+            android:textColorHighlight="#ac6d90"
+            android:id="@+id/about"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:hint="About"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/blue_grey_500"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:layout_margin="10dp"
+            android:textColor="@color/bottombar"
+            android:textColorHighlight="#ac6d90"
+            android:id="@+id/About_description"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:maxLength="2000"
+
+            android:layout_height="wrap_content"
+            android:hint="Description"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/PostQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/textinputborder7"
+        android:layout_gravity="right"
+        android:layout_margin="7dp"
+        android:text="Submit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Your Feedback is very important to us in improving the user experience"
+android:layout_margin="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="15dp"
+
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Any suggestions on improvements or issues please let us know"
+        android:layout_margin="10dp"
+        android:textColor="@color/BlueViolet"
+        android:textSize="15dp"
+
+        android:textStyle="italic" />
+
+</LinearLayout>
+
+    <ProgressBar android:indeterminate="true"
+        android:layout_width="50dp" android:layout_height="50dp"
+        android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+        android:layout_gravity="center"
+
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.AppAccent"
+        android:visibility="gone"
+        />
+</RelativeLayout>

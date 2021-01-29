@@ -1,0 +1,321 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:layout_below="@+id/appbar"
+    android:id="@+id/phonenumber"
+    android:minHeight="40dp"
+    app:cardCornerRadius="6sp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    app:contentPadding="5dp"
+
+    app:layout_scrollFlags="enterAlways"
+    app:cardElevation="4dp"
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='2,2,2,2'>
+<LinearLayout android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="College Name"
+            android:id="@+id/fest_static_name"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+android:padding="4dp"
+android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_view"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Fest Name"
+            android:id="@+id/fest_static_fest_name"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_fest_name"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="College Website"
+            android:id="@+id/fest_static_college_website"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_college_website"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Fest Caption"
+            android:id="@+id/fest_static_fest_caption"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_fest_caption"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Fest Type"
+            android:id="@+id/fest_static_fest_type"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_fest_type"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Fest Department"
+            android:id="@+id/fest_static_fest_depart"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_fest_depart"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Event Dates"
+            android:id="@+id/fest_static_event_dates"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_event_dates"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_weight=".60" />
+
+    </LinearLayout>
+    <include layout="@layout/view_line10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="8dp"
+        android:background="@drawable/ripple_effect2"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Fest Description"
+            android:id="@+id/fest_static_fest_description"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:textColor="#872c59"
+            android:layout_height="wrap_content"
+ />
+
+        <TextView
+            android:text=""
+            android:id="@+id/fest_data_fest_description"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_marginLeft="3dp"
+
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+             />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/moreinfo"
+        android:layout_below="@+id/recyclefsetoverview"
+        android:visibility="gone"
+        android:text="For more info navigate to fests page in the app...."
+        android:layout_height="wrap_content" />
+
+    <!--<TextView android:id="@+id/fest_data_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:layout_margin="2dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:fontFamily="arial"
+        android:textColor="@color/app_theme"
+
+        android:text="@string/college_explore"
+
+        xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

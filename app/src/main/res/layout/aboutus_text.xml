@@ -1,0 +1,143 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:clickable="true"
+
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:id="@+id/shownewsnotifyLayout">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/aboutustollbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="5dp"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+
+        </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:id="@+id/textview_text"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10px"
+        android:textStyle="bold"
+        android:fontFamily="arial"
+        android:layout_gravity="center"
+android:textSize="18dp"
+        android:textColor="#cdcc0300"
+        android:layout_centerInParent="true"
+        android:text="@string/mission"
+
+        />
+        <TextView
+            android:id="@+id/textview_textAll"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10px"
+            android:fontFamily="arial"
+            android:layout_gravity="center"
+
+            android:textColor="#cd40294a"
+            android:layout_centerInParent="true"
+            android:text="@string/the_choice_of_college_is_no_doubt_one_the_hardest_and_one_of_the_biggest_decision_of_one_s_life_no_one_would_want_to_take_the_wrong_step_we_at_college_explore_wish_to_help_you_out_in_this_overwhelming_and_ever_spiralling_decision_our_app_gives_you_the_most_reliable_content_packed_onto_a_user_friendly_and_interactive_user_interface_we_wish_to_grow_with_you_to_become_india_s_best_as_you_funnel_through_academia_and_grab_onto_the_profile_you_deserve"
+            />
+    <TextView
+        android:id="@+id/textview_textAldl"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10px"
+        android:fontFamily="arial"
+        android:layout_gravity="center"
+
+        android:textColor="#cd40294a"
+        android:layout_centerInParent="true"
+        android:text="@string/our_content_obtained_from_the_most_authentic_source_the_college_will_provide_you_information_about_the_college_placements_cut_off_faculty_current_affairs_and_much_more_so_that_you_associate_yourself_with_the_right_college"
+        />
+    <TextView
+        android:id="@+id/textview_te"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10px"
+        android:textStyle="bold"
+        android:fontFamily="arial"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="#cdcc0300"
+        android:layout_centerInParent="true"
+        android:text="@string/vision"
+        />
+    <TextView
+        android:id="@+id/textview_textAll43"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10px"
+        android:fontFamily="arial"
+        android:layout_gravity="center"
+
+        android:textColor="#cd40294a"
+        android:layout_centerInParent="true"
+        android:text="@string/our_vision_is_to_empower_students_to_make_their_own_correct_choices_in_life_in_a_faster_better_and_wiser_fashion"
+        />
+        <TextView
+            android:id="@+id/textview_textAll1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10px"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="arial"
+            android:layout_gravity="center"
+
+            android:textColor="#cdcc0300"
+            android:layout_centerInParent="true"
+            android:text="@string/developers"
+            />
+        <TextView
+            android:id="@+id/textview_textAll2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10px"
+            android:layout_gravity="center"
+
+            android:textColor="#cd40294a"
+            android:fontFamily="arial"
+            android:layout_centerInParent="true"
+            android:text="@string/dande_reddy_prasad_balaji_yanam_damoji_pathivada"
+            />
+    <TextView
+        android:id="@+id/textview_textAll122"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10px"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:fontFamily="arial"
+        android:layout_gravity="center"
+
+        android:textColor="#cdcc0300"
+        android:layout_centerInParent="true"
+        android:text="@string/contact_us"
+        />
+    <TextView
+        android:id="@+id/textview_textAll21"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10px"
+        android:layout_gravity="center"
+
+        android:textColor="#cd40294a"
+        android:fontFamily="arial"
+        android:layout_centerInParent="true"
+        android:text="For any info or queries contact us at : dandereddyprasad@collegeexplore.in"
+        />
+    </LinearLayout>

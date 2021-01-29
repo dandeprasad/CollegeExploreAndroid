@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackgroundBorderless"
+    android:orientation="vertical"
+
+    android:clickable="true"
+    android:id="@+id/mapsViewdrawer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/img">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/dandeking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@color/app_theme"
+        android:textSize="14dp"
+        android:maxLines="2"
+        android:background="?selectableItemBackgroundBorderless"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:ellipsize="end"
+        />
+</RelativeLayout>

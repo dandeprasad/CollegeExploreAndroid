@@ -1,0 +1,51 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/carrer_cardview"
+    app:cardCornerRadius="10dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='2,2,2,2'>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shownewsnotifyLayout">
+
+        <ImageView
+            android:layout_height="120dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/shownewsnotifydetail"
+            android:src="@drawable/load_mask"
+            android:foreground="#80000000"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/clg_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+android:layout_margin="2dp"
+android:gravity="center_horizontal"
+            android:textSize="20dp"
+android:fontFamily="arial"
+            android:textColor="@color/white"
+
+            android:text="@string/college_explore"
+
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

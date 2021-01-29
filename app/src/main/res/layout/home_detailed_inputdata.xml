@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:layout_marginBottom="2dp"
+    android:clickable="true"
+    android:id="@+id/nitsView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:foreground="#80000000"
+            android:foregroundTint="#1A10171d"
+            android:foregroundTintMode="screen"
+            android:id="@+id/newsimg">
+        </ImageView>
+
+    <TextView
+        android:id="@+id/newstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+android:layout_centerHorizontal="true"
+android:layout_centerInParent="true"
+
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+ />
+    <TextView
+        android:id="@+id/newsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        />
+    <!-- android:textColor="#909699"  -->
+    </RelativeLayout>

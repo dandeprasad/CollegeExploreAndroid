@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_below="@+id/appbar"
+    android:id="@+id/reviw_cardview"
+    app:cardCornerRadius="6sp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    app:contentPadding="5dp"
+
+    app:layout_scrollFlags="enterAlways"
+    app:cardElevation="4dp"
+
+
+    android:thicknessRatio="1.9"
+    android.support.v7.cardview:contentPadding='2,2,2,2'>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+
+        android:layout_gravity="right"
+        android:id="@+id/relative1"
+        android:layout_alignParentRight="true"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/fcBar1"
+                android:text="Faculty           "
+                android:textColor="@color/Black"
+                android:textSize="10dp" />
+
+            <RatingBar
+                android:id="@+id/fcBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:isIndicator="true"
+
+                android:numStars="5"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/camBar1"
+                android:textSize="10dp"
+                android:text="Campus         "
+                android:textColor="@color/Black" />
+
+            <RatingBar
+                android:id="@+id/camBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fcBar1"
+
+                android:layout_toEndOf="@+id/viewline"
+                android:layout_toRightOf="@+id/viewline"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/envBar1"
+                android:text="Environment "
+                android:textColor="@color/Black" />
+
+            <RatingBar
+                android:id="@+id/envBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camBar1"
+
+                android:layout_toEndOf="@+id/viewline"
+                android:layout_toRightOf="@+id/viewline"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/third"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/placBar1"
+                android:text="Placements  "
+                android:textSize="10dp"
+                android:textColor="@color/Black" />
+
+            <RatingBar
+                android:id="@+id/placBar1"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/envBar1"
+
+                android:isIndicator="true"
+                android:numStars="5"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_alignParentTop="true"
+    android:id="@+id/relativedata"
+    android:layout_gravity="start"
+    android:layout_alignParentLeft="true"
+    android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="150dp"
+            android:text="No Review Provided"
+android:paddingBottom="30dp"
+            android:id="@+id/fest_caption"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:scrollHorizontally="true"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_height="95dp" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/maincontent"
+        android:text=""
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:layout_below="@+id/fest_caption"
+        android:textSize="15dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+<!--    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relativedata"
+        android:id="@+id/horizon"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="10dp"
+            android:layout_below="@+id/button_selectpicLinear"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageLayout">
+
+        </LinearLayout>
+    </HorizontalScrollView>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativedata"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/carduserImageimg"
+            android:layout_width="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+
+           />
+        <TextView
+            android:id="@+id/usernamerating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/carduserImageimg"
+
+            android:layout_toRightOf="@+id/carduserImageimg"
+            android:paddingLeft="15dp"
+            android:text=""
+            android:textSize="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/usernamerating"
+            android:id="@+id/userdate"
+            android:paddingLeft="15dp"
+            android:textSize="10dp"
+
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/like_button"
+
+                android:id="@+id/like_button"
+                android:paddingLeft="15dp"
+                android:textSize="15dp"
+
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+
+                android:layout_toRightOf="@+id/like_button"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/likecount"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/unlike_button"
+
+                android:layout_toRightOf="@+id/likecount"
+                android:id="@+id/unlikebutton"
+                android:paddingLeft="15dp"
+                android:textSize="15dp"
+
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+
+                android:layout_toRightOf="@+id/unlikebutton"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/unlikecount"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

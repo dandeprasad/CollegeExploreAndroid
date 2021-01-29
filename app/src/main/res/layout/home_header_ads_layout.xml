@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/carrer_cardview"
+    app:cardCornerRadius="0dp"
+
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:thicknessRatio="1.9"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content" >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:padding="10dip"
+app:radius="5sp"
+            app:centered="true"
+            app:fillColor="@color/app_theme"
+            app:pageColor="#ffffff"
+            app:snap="false" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

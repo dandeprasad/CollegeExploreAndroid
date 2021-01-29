@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home"
+            />
+
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/nav_news" />
+
+
+        <item
+            android:id="@+id/nav_admission"
+            android:visible="false"
+            android:icon="@drawable/ic_admissions"
+            android:title="@string/nav_admission" />
+
+
+        <item
+            android:id="@+id/nav_clgs"
+            android:icon="@drawable/co1"
+            android:title="@string/nav_clgs"
+
+            />
+
+
+        <item
+            android:id="@+id/nav_exams"
+            android:icon="@drawable/ic_exams"
+            android:title="@string/nav_exams" />
+        <item
+            android:id="@+id/nav_fests"
+            android:icon="@drawable/ic_fests"
+            android:title="@string/nav_fests" />
+<!--        <item
+            android:id="@+id/nav_ques_ans"
+            android:icon="@drawable/ic_quesans"
+            android:title="@string/nav_ques_ans" />-->
+        <item
+            android:id="@+id/nav_cutoff_place"
+            android:icon="@drawable/ic_cutoffs"
+            android:title="@string/nav_cutoff_place" />
+        <item
+            android:id="@+id/nav_place"
+            android:icon="@drawable/ic_placements"
+            android:title="@string/nav_place" />
+        <item
+            android:id="@+id/nav_rat_rank"
+            android:icon="@drawable/ic_rate"
+            android:title="@string/nav_rat_rank" />
+<!--        <item
+            android:id="@+id/nav_carrerguid"
+            android:icon="@drawable/ic_careerguid"
+            android:title="@string/nav_carrerguid" />-->
+
+  <!--      <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="@string/nav_chat" />-->
+
+    </group>
+
+    <group
+        android:id="@+id/second"
+        android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="@string/nav_share"
+
+              />
+
+            <item
+                android:id="@+id/nav_about"
+                android:title="@string/nav_about" />
+
+    </group>
+    <group
+        android:id="@+id/second1"
+        android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_profileedit"
+                android:title="@string/nav_profileedit" />
+            <item
+                android:id="@+id/nav_notify"
+                android:title="@string/nav_notify" />
+
+</group>
+</menu>

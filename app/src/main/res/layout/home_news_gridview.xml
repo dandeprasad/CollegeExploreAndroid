@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/app_theme_backgrnd"
+    android:alpha="0.7"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+android:layout_marginBottom="2dp"
+        android:weightSum="3">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+android:background="@drawable/ripple_effect1"
+            android:elevation="25dp"
+            android:id="@+id/home_colleges_card"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="0dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_effect1"
+                android:id="@+id/allnotifications">
+
+                <ImageView
+                    android:layout_height="50dp"
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/home_colleges"
+                    android:src="@drawable/home_colleges"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                  android:layout_below="@+id/home_colleges"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:text="@string/colleges"
+android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/ripple_effect1"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:id="@+id/home_admissions_card"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="0dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/allnotifications1">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify1"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/home_get_admissions"
+
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs1"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgallnotify1"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/admissions"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:id="@+id/home_exams_card"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="0dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/allnotifications2">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_exams"
+                    android:id="@+id/imgallnotify2"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs2"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgallnotify2"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/exams"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:weightSum="3">
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:background="@drawable/ripple_effect1"
+            android:id="@+id/view23"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+
+            android:layout_marginLeft="6dp"
+
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/allnotifications3">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify3"
+                    android:src="@drawable/home_ranks"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/imgallnotify3"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/ranks"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:id="@+id/view24"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_effect1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+
+            android:layout_marginLeft="6dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/allnotifications35">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify35"
+                    android:src="@drawable/b_news_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs35"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/imgallnotify35"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/write_review"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:background="@drawable/ripple_effect1"
+            android:id="@+id/home_news_card"
+            android:layout_weight="1"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:layout_marginLeft="6dp"
+
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/allnotifications6">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify6"
+                    android:src="@drawable/b_news_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs6"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/imgallnotify6"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/news"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_marginBottom="3dp"
+        android:weightSum="3">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:id="@+id/view112"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/ripple_effect1"
+            android:layout_marginBottom="0dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:background="?selectableItemBackgroundBorderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/allnotifications11">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify12"
+                    android:src="@drawable/home_courses3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs12"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/imgallnotify12"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    android:textColor="#000"
+                    android:text="@string/courses"
+                    android:gravity="center_horizontal"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:id="@+id/home_cutoff_card"
+            android:background="@drawable/ripple_effect1"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="0dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/allnotifications1123">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify1123"
+                    android:src="@drawable/home_cuttoff"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs132"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/imgallnotify1123"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/cutoff_s"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:elevation="15dp"
+            android:id="@+id/view225"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:background="@drawable/ripple_effect1"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="0dp"
+            android:thicknessRatio="1.9"
+            android.support.v7.cardview:contentPadding='2,2,2,2'>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/allnotifications72">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgallnotify28"
+                    android:src="@drawable/ic_rate"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textviewtopclgs29"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/imgallnotify28"
+                    android:fontFamily="arial"
+                    android:maxLines="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000"
+                    android:text="@string/reivews"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

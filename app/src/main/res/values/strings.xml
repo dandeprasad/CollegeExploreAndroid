@@ -1,0 +1,467 @@
+<resources>
+    <string name="app_name">CollegeExplore</string>
+    <string name="studentlogin">User Login</string>
+    <string name="maprecycleview">Colleges Menu</string>
+    <string name="postquestion">Post Question</string>
+    <string name="maps_all">News app</string>
+    <string name="logo_desc">Nit Puducherry</string>
+    <string name="search_hint">Search Colleges</string>
+
+    <string name="map_near_by">Near By</string>
+    <string name="map_filter">Filter</string>
+    <string name="map_recent">Recently Viewed</string>
+    <string name="card_back_title">Angry Red Android</string>
+    <string name="card_back_description"><![CDATA[Lorem ipsum dolor sit]]></string>
+    <string name="signed_in_fmt">%s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="refresh_token">Get Fresh Token</string>
+    <string-array name="myStringHome">
+        <item></item>
+        <item>Convocation Fee -->Closing date for Online Registration is 24-02-2016 </item>
+        <item>Second Convocation Programme - Scheduled on 27-02-2016</item>
+        <item>NIT Directors meeting with the President of India</item>
+        <item>Walk-in Interview for JRF Positions on 04-03-2016 (Friday) at 9:30 AM </item>
+        <item>NITs Scholars In-Residence Programme at Rashtrapati Bhavan</item>
+        <item> Second Convocation Programme --> Important Instructions</item>
+    </string-array>
+    <string-array name="NewsNitArray">
+
+    </string-array>
+
+<string name="drawer_open">open the drawer colleges</string>
+    <string name="drawer_close">close the drawer colleges</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="NitInfo">Nits home activity gateway</string>
+    <string name="Nit_label">Nits</string>
+
+
+
+
+    <string name="exam_overview">OverView</string>
+    <string name="exam_howtoprepare">How to Prepare</string>
+    <string name="imp_dates">Important Dates</string>
+    <string name="Results">Results</string>
+    <string name="fest_about">About</string>
+    <string name="fest_event_list">Event List</string>
+    <string name="fest_register">Register</string>
+    <string name="fest_contact">Contact</string>
+
+
+    <string name="Home_News_Notifications">News &amp; Notifications</string>
+    <string name="Home_Carrer_Guidance">Carrer Guidance</string>
+    <string name="tab_notifications">Notifications</string>
+    <string name="nits_header">NITS</string>
+    <string name="ques_answ">Ques&amp;Ans</string>
+    <string name="Fests_colleg">Fests@Colleges</string>
+    <string name="Exams">Exams</string>
+    <string name="Admissions">Admissions</string>
+    <string name="iits_header">IITS</string>
+    <string name="news_college">News</string>
+    <string name="deemed_univ">Deemed Univ</string>
+
+    <string name="about_us">About Us</string>
+    <string name="cutoff">Cutt off\'s</string>
+    <string name="placements">Placements</string>
+    <string name="fest">Fests</string>
+    <string name="department">Department</string>
+    <string name="facility">Facilities</string>
+    <string name="clg_news">News</string>
+    <string name="rank">Rank</string>
+    <string name="review">Reviews</string>
+
+    <string-array name="home_appicons">
+        <item>   <string name="icon_colleges">Colleges</string></item>
+        <item>    <string name="icon_news">News</string></item>
+        <item>      <string name="icon_fests">Fests</string></item>
+        <item>    <string name="icon_exams">Exams</string></item>
+
+        <item>    <string name="icon_ranks">Ranks</string></item>
+        <item>     <string name="icon_cutoff">Cutoff\'s</string></item>
+        <item>     <string name="icon_placements">Placements</string></item>
+    </string-array>
+    <string-array name="v1_home_appicons">
+    <item>   <string name="v1_icon_colleges">Colleges</string></item>
+    <item>    <string name="v1_icon_news">News</string></item>
+    <item>      <string name="v1_icon_fests">Fests</string></item>
+    <item>    <string name="v1_icon_exams">Exams</string></item>
+
+    <item>    <string name="v1_icon_ranks">Ranks</string></item>
+    <item>     <string name="v1_icon_cutoff">Cutoff\'s</string></item>
+        <item>     <string name="v1_icon_placements">Placements</string></item>
+    <item>     <string name="v1_nav_notify">Notifiy</string></item>
+<item>     <string name="v1_nav_profileedit">Profile</string></item>
+        <item>     <string name="v1_nav_about">About Us</string></item>
+        <item>     <string name="v1_nav_share">Share</string></item>
+        <item>     <string name="v1_nav_old_look">Previous clgexp</string></item>
+</string-array>
+
+
+<!--
+    <item>    <string name="icon_admissions">Admissions</string></item>
+-->
+    <string-array name="fest_types">
+        <item>All</item>
+        <item>Technical</item>
+        <item>Cultural</item>
+        <item>Sports</item>
+
+    </string-array>
+
+
+    <!--  User Login Activity-->
+<string name="user_name">Enter Name</string>
+    <string name="UserMobileNo">Mobile No</string>
+
+
+    <string name="permission_rationale_location">Access to the location service is required to give the  directions and more.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required to get more info.</string>
+
+
+
+
+    <string-array name="Navigation_data_icons">
+        <item>Home</item>
+        <item>Clgs MapView</item>
+        <item>Carrer Guidande</item>
+        <item>NITS</item>
+        <item>News @Colleges</item>
+        <item>IITS</item>
+        <item>Deemed University</item>
+        <item>Quest&amp;Ans</item>
+        <item>Fests</item>
+        <item>Exams</item>
+        <item>Admissions</item>
+
+
+    </string-array>
+
+    <string-array name="fests_filter">
+        <item>"   All   "</item>
+        <item>"Technical"</item>
+        <item>"Cultural"</item>
+        <item>"  NIT'S  "</item>
+        <item>"  IIT'S  "</item>
+        <item>"  IIIT'S  "</item>
+        <item>DEEMED UNIV..</item>
+        <item>"  CSE  "</item>
+        <item>"  CIVIL  "</item>
+        <item>"  ECE  "</item>
+        <item>"  EEE  "</item>
+        <item>"  MECH  "</item>
+        <item>More Filters</item>
+
+
+    </string-array>
+
+    <string name="loading">Loading…</string>
+    <string name="text_favorites">Favorites</string>
+    <string name="text_schedules">Schedules</string>
+    <string name="text_music">Music</string>
+
+    <!--<string name="facebook_app_id">736691553158936</string>-->
+    <!--<string name="fb_login_protocol_scheme">736691553158936</string>-->
+    <string name="facebook_app_id">589203164821068</string>
+    <string name="fb_login_protocol_scheme">fb589203164821068</string>
+
+    <string name="server_client_id">902195432470-od39nbhe7k6ckpto72prds2o1dknqvet.apps.googleusercontent.com</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2627997485122907/3678766473</string>
+
+
+
+
+    <string name="quickstart_message">Click the SUBSCRIBE TO NEWS button below to subscribe to the
+        news topic. Messages sent to the news topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>College Explore</item>
+        <item>News</item>
+        <item>Admissions</item>
+        <item>Colleges</item>
+        <item>Exams</item>
+        <item>Fests</item>
+        <item>Questions &amp; Answers</item>
+        <item>Cutoff\'s &amp; Placements</item>
+        <item>Ratings &amp; Rankings</item>
+    </string-array>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_news">News</string>
+    <string name="nav_admission">Admissions</string>
+    <string name="nav_clgs">Colleges</string>
+    <string name="nav_exams">Exams</string>
+    <string name="nav_carrerguid">Carrer Guidance</string>
+    <string name="nav_chat">Speak to us</string>
+    <string name="nav_fests">Fests</string>
+    <string name="nav_ques_ans">Questions &amp; Answers</string>
+    <string name="nav_cutoff_place">Cutoff\'s</string>
+    <string name="nav_rat_rank">Rankings</string>
+    <string name="nav_place"> Placements</string>
+
+    <string name="nav_share">Share</string>
+    <string name="nav_about">About Us</string>
+    <string name="nav_profileedit">Profile Editing</string>
+    <string name="nav_notify">Notifications</string>
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="communicate">Communicate</string>
+    <string name="settings">Settings</string>
+
+    <!-- Navigation drawer Menu labels end-->
+    <!--bottom view data starts-->
+    <string name="news_bottomview">News</string>
+    <string name="quest_bottomview">Q &amp; A</string>
+    <string name="Colleges_bottomview">Colleges</string>
+    <string name="Exam_bottomview">Exams</string>
+    <string name="Profile_bottomview">Profile</string>
+    <string name="admissions">Admissions</string>
+    <string name="colleges">Colleges</string>
+    <string name="exams">Exams</string>
+    <string name="fests">Fests</string>
+    <string name="news">News</string>
+    <string name="carrer">Carrer</string>
+
+    <!-- Bottom view ends-->
+
+    <!-- home news notifications start-->
+    <string name="top_filters">Top filters</string>
+    <string name="clgs_in_cities">Colleges in cities</string>
+    <string name="clgs_in_topstates">Colleges in top states</string>
+    <string name="state_wise_clgs">Stream-Wise Colleges</string>
+    <string name="top_rating">Top rating Colleges</string>
+    <!-- home news notifications ends-->
+
+    <!--Top colleges start-->
+    <string name="hyderabad">Hyderabad</string>
+    <string name="chennai">Chennai</string>
+    <string name="mumbai">Mumbai</string>
+    <string name="bangalore">Bangalore</string>
+    <string name="delhi">Delhi</string>
+    <string name="kerela">Kerela</string>
+    <string name="west_bengal">West Bengal</string>
+    <string name="jaipur">Jaipur</string>
+    <string name="lucknow">Lucknow</string>
+    <string name="pune">Pune</string>
+    <string name="search_for_colleges_universities">Search for Colleges..</string>
+
+    <string-array name="topcities">
+        <item>Hyderabad</item>
+        <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Thiruvananthapuram</item>
+        <item>Kolkata</item>
+        <item>Jaipur</item>
+        <item>Lucknow</item>
+        <item>Pune</item>
+        <item>View All</item>
+    </string-array>
+
+    <!--Top colleges end-->
+
+    <!--Top states starts-->
+    <string-array name="topstates">
+        <item>Andhra Pradesh</item>
+        <item>Tamil Nadu</item>
+        <item>Maharashtra</item>
+        <item>Karnataka</item>
+        <item>Telangana</item>
+        <item>Uttar Pradesh</item>
+        <item>Madhya Pradesh</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item> West Bengal</item>
+        <item>View All</item>
+    </string-array>
+    <!--Top states ends-->
+
+    <!--Top states starts-->
+    <string-array name="streamwiseclgs">
+        <item>Computer science</item>
+        <item>Electronics</item>
+        <item>Electrical</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+        <item>Chemical</item>
+        <item>Biotechnology</item>
+        <item>Metallurgical</item>
+        <item>mineral</item>
+        <item>Aerospace</item>
+        <item>View All</item>
+    </string-array>
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="shr_product_category">Best Gifts for Teen Girls</string>
+    <string name="shr_product_description">
+        Choose fun, exciting, and unique gifts every girl will love.
+    </string>
+    <string name="shr_category_clothing">Clothing</string>
+    <string name="shr_category_home">Home</string>
+    <string name="shr_category_popsicles">Popsicles</string>
+    <string name="mission"><u>Mission</u></string>
+    <string name="vision"><u>Vision</u></string>
+    <string name="developers"><u>Developers :</u></string>
+    <string name="about"><u>About</u></string>
+    <string name="question_paper_analysis"><u>Question Paper Analysis</u></string>
+    <string name="exam_syllabus"><u>Exam Syllabus</u></string>
+    <string name="important_dates"><u>Important Dates</u></string>
+    <string name="test_centre_details"><u>Test Centre Details</u></string>
+    <string name="exam_result"><u>Exam Result</u></string>
+    <string name="gps_network_not_enabled">Your GPS not enabled</string>
+    <string name="open_location_settings">Location Settings</string>
+    <string name="Cancel">Cancel</string>
+
+
+    <string name="the_choice_of_college_is_no_doubt_one_the_hardest_and_one_of_the_biggest_decision_of_one_s_life_no_one_would_want_to_take_the_wrong_step_we_at_college_explore_wish_to_help_you_out_in_this_overwhelming_and_ever_spiralling_decision_our_app_gives_you_the_most_reliable_content_packed_onto_a_user_friendly_and_interactive_user_interface_we_wish_to_grow_with_you_to_become_india_s_best_as_you_funnel_through_academia_and_grab_onto_the_profile_you_deserve">The choice of college is no doubt one the hardest and one of the biggest decision of one’s life. No one would want to take the wrong step. We at College Explore wish to help you out in this overwhelming and ever spiralling decision. Our app gives you the most reliable content packed onto a user-friendly and interactive User Interface. We wish to grow with you to become India’s best as you funnel through academia and grab onto the profile you deserve.</string>
+    <string name="our_content_obtained_from_the_most_authentic_source_the_college_will_provide_you_information_about_the_college_placements_cut_off_faculty_current_affairs_and_much_more_so_that_you_associate_yourself_with_the_right_college">Our content obtained from the most authentic source, the collegeexplore, will provide you information about the colleges ,placements, cut-off, current affairs and much more- so that you associate yourself with the right college.</string>
+    <string name="our_vision_is_to_empower_students_to_make_their_own_correct_choices_in_life_in_a_faster_better_and_wiser_fashion">Our vision is to empower students to make their own correct choices in life in a faster, better and wiser fashion.</string>
+    <string name="dande_reddy_prasad_balaji_yanam_damoji_pathivada">Dande Reddy Prasad,Siva Ganesh,Damoji Pathivada</string>
+    <string name="college_explore">collegeexplore</string>
+    <string name="post_your_answer_here">Post your Answer here</string>
+    <string name="nit_s">"   NIT\'s   "</string>
+    <string name="iit_s">"   IIT\'s   "</string>
+    <string name="examination_date">EXAMINATION DATE</string>
+    <string name="date">date</string>
+    <string name="registration_starts_on">Registration Starts On</string>
+    <string name="registration_ends_on">Registration Ends On</string>
+    <string name="data">data</string>
+    <string name="result_date">Result Date</string>
+    <string name="view_details">VIEW DETAILS</string>
+    <string name="registration_start_date">Registration Start Date</string>
+    <string name="registration_ends_date">Registration Ends Date</string>
+    <string name="admit_card_date">Admit Card Date</string>
+    <string name="exam_start_date">Exam Start Date</string>
+    <string name="exam_end_date">Exam End Date</string>
+    <string name="pen_amp_paper_based_exam_date"><![CDATA[Pen & Paper Based Exam Date]]></string>
+    <string name="computer_based_exam_date">Computer Based Exam Date</string>
+    <string name="explore_colleges">Let\'s go..</string>
+    <string name="hi_guestuser">Hi! GuestUser</string>
+    <string name="voice">Voice</string>
+    <string name="search_colleges">Search Colleges</string>
+    <string name="search">search</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="ranks">Ranks</string>
+    <string name="write_review">Write Review</string>
+    <string name="courses">Courses</string>
+    <string name="cutoff_s">Cutoff\'s</string>
+    <string name="reivews">Reivews</string>
+    <string name="ask_your_question">Ask Your Question</string>
+    <string name="directions">Directions</string>
+    <string name="all">"   All   "</string>
+    <string name="nits">"   NITs   "</string>
+    <string name="iits">"   IITs   "</string>
+    <string name="deemed_universities">Deemed Universities</string>
+    <string name="iiit_s">"  IIIT\'s  "</string>
+    <string name="carrer_guide">Carrer Guide</string>
+    <string name="more_filters">More Filters</string>
+    <string name="no_items">No items.</string>
+    <string name="visiting_companies">Visiting Companies</string>
+    <string name="companies_visited_this_campus">Companies Visited this campus</string>
+    <string name="click_on_the_college_to_view_the_package_offered">*Click on the company to view the Package offered</string>
+    <string name="ask_your_query">Write your Question..</string>
+    <string name="post">Post</string>
+    <string name="register_to_collegeexplore">Register to CollegeExplore</string>
+    <string name="emailid">EmailID</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="register">Register</string>
+    <string name="guest_user">Guest User</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account ? Sign Up</string>
+    <string name="phone">Phone:</string>
+    <string name="edit">Edit</string>
+    <string name="course">Course:</string>
+    <string name="website">Website:</string>
+    <string name="college_information">College Information</string>
+    <string name="click_window_to_view_college_details_long_press_to_close_this">VIEW DETAILS</string>
+    <string name="about_us_java">About Us</string>
+    <string name="post_your_question">Ask Your Question</string>
+    <string name="posted_successfully">Posted Successfully</string>
+    <string name="thats_all_for_now">That\'s all for now</string>
+    <string name="steams">Streams</string>
+    <string name="round">ROUND</string>
+    <string name="jee_entrnace_2017">Jee Entrance 2017</string>
+    <string name="category">Category</string>
+    <string name="Quota">quota</string>
+    <string name="quota">quota</string>
+    <string name="opening_rank">OPENING RANK</string>
+    <string name="closing_rank">CLOSING RANK</string>
+    <string name="fest_info">Fest Info: </string>
+    <string name="filter_by">Filter By:</string>
+    <string name="fests_nearby">Fests NearBy(Date)</string>
+    <string name="please_login_to_access">Please Login to access all our features</string>
+    <string name="login_to_access_all">Please Login to access all our features</string>
+    <string name="please_check_internet">Please check your Internet.</string>
+    <string name="toprated">Top rated/NearBy</string>
+    <string name="nits_space">"   NIT\'s    "</string>
+    <string name="iits_space">"   IIT\'s   "</string>
+    <string name="deemed_univ_space">Deemed Univ\'s</string>
+    <string name="iiits_space">"   IIIT\'s   "</string>
+    <string name="iim_space">"   IIM\'s   "</string>
+    <string name="dev_map">Dande Reddy Prasad---Siva Ganesh---Damoji Pathivada</string>
+    <string name="getting_your_loc">Getting your location</string>
+    <string name="locattion_grant">Location permission was granted.</string>
+    <string name="location_denied">Location permission request was denied.</string>
+    <string name="location_perm_avail">Location permission is available.</string>
+    <string name="fetching_location">Please wait while we fetching your location....</string>
+    <string name="at">At:</string>
+    <string name="permission_not_req">Permission is not available. Requesting Location permission.</string>
+    <string name="getting_info">Getting the information</string>
+    <string name="closed">Closed</string>
+    <string name="no_colleges">No Colleges found near your location</string>
+    <string name="directions_not_avail">Uh ohh Directions not available</string>
+    <string name="distance">Distance:</string>
+    <string name="route">Route:</string>
+    <string name="Route">route</string>
+    <string name="duration">Duration:</string>
+    <string name="placements_1">Placements</string>
+    <string name="package_offered">Package offered:</string>
+    <string name="welome_message">"Welcome to CollegeExplore"</string>
+    <string name="sorrt_not_connect_internet">"Sorry! Not connected to internet"</string>
+    <string name="streams">streams</string>
+    <string name="posted_success">Posted Successfully</string>
+    <string name="always_logged_in_to_access">Always Stay logged in to access all features of us</string>
+    <string name="user_login">User Login</string>
+    <string name="login_with_facebook">Login With facebook</string>
+    <string name="enter_valid_email">Enter a Valid EmailID</string>
+    <string name="enter_valid_email1">Enter a Valid EmailID</string>
+    <string name="password_length">Password lenght should be atleast 8</string>
+    <string name="not_able_con_serv">Not Able to connect our Servers</string>
+    <string name="successfully_loged_in">Successfully Logged into collegeExplore</string>
+    <string name="enter_correct_pass">Please Enter Correct Password</string>
+    <string name="register_before">Please register with us before login</string>
+    <string name="enter_otp_valid">Enter a Valid OTP</string>
+    <string name="enter_mobile_number">Enter a valid Mobile Number</string>
+    <string name="successful_register">Successfully Registered with collegeExplore</string>
+    <string name="register_your_fest">Register Your Fest</string>
+    <string name="fest_college_name">College Name</string>
+
+    <string name="user"><u>User:</u></string>
+    <string name="contact_us"><u>Contact Us</u></string>
+    <string name="youtubeapikey">AIzaSyDkFus74avZYvqs8HnmTl7Kyimr6N8Ii2c</string>
+</resources>

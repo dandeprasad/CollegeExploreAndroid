@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:id="@+id/map_view_onclick_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layoutmap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:openDrawer="start" >
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator1"
+        android:layout_width="match_parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:text="Show Modal Bottom Sheet"/>-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/map_linearlay"
+    >
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/map_cardviewplus"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/rounded_corner10"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        app:cardBackgroundColor="#ffffff"
+
+        android:thicknessRatio="1.9"
+        >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="#ffffff"
+
+        android:id="@+id/maps_ToolBar_appbar">
+
+    <!-- android:background="@null"-->
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/maps_ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+
+            android:background="#ffffff"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="11dp"
+                android:focusableInTouchMode="true"
+
+                android:layout_marginRight="15dp">
+
+                <ImageButton
+                    android:id="@+id/iv_search_mic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/voice"
+                    android:layout_marginRight="7dp"
+                    android:tint="@color/Black"
+                    android:src="@drawable/ic_mic_green" />
+                <ImageButton
+                    android:id="@+id/iv_search_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+
+                    android:contentDescription="@string/voice"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/search_cancel" />
+
+
+                <EditText
+                    android:id="@+id/ed_home_searchbar"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/iv_search_icon"
+                    android:background="@android:color/transparent"
+
+                    android:hint="@string/search_colleges"
+                    android:imeOptions="actionSearch"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_theme"
+ />
+
+                <ImageButton
+                    android:id="@+id/iv_search_icon"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:src="@drawable/action_search"
+                    android:contentDescription="@string/search" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+       <!-- <include layout="@layout/view_line5"/>-->
+    </android.support.design.widget.AppBarLayout>
+    </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclenitNewsNotify"
+            android:layout_below="@+id/map_cardviewplus"
+            android:layout_marginBottom="2dp"
+android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclenitNewsNotify"
+        android:layout_above="@+id/horizontal_dropdown_icon_menu_items"
+        android:id="@+id/map_framelayout">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/horizontal_dropdown_icon_menu_items"
+        android:layout_width="match_parent"
+        android:clickable="true"
+android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".33"
+            android:id="@+id/relativenearby"
+            android:layout_margin="2dp"
+            android:clickable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/nearby"
+
+                android:src="@drawable/map_nearby"
+                android:text="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/nearby"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/nearbytext"
+                android:textColor="@color/blackoptac"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Near By"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".33"
+            android:id="@+id/relativeuseractivity"
+            android:layout_margin="2dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+
+                android:id="@+id/recent"
+
+
+                android:src="@drawable/map_recent"
+                android:text="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/recent"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/recenttext"
+                android:textColor="@color/blackoptac"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="User Activity"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".33"
+            android:id="@+id/relativefilter"
+            android:layout_margin="2dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+
+                android:id="@+id/filter"
+
+                android:src="@drawable/map_filter"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/filter"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/filtertext"
+                android:textColor="@color/blackoptac"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Filter"/>
+        </RelativeLayout>
+
+        <!--  <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_weight=".25"
+              android:id="@+id/relativemapenv"
+              android:visibility="gone"
+              android:layout_margin="5dp"
+              android:background="?selectableItemBackgroundBorderless"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  android:layout_centerHorizontal="true"
+                  android:tint="@color/app_theme"
+                  android:id="@+id/mapenv"
+
+
+                  android:src="@drawable/map_environment"
+                   />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_below="@+id/mapenv"
+                  android:singleLine="true"
+                  android:ellipsize="end"
+                  android:id="@+id/mapenvtext"
+                  android:layout_centerHorizontal="true"
+                  android:layout_height="wrap_content"
+                  android:text="Environment"/>
+          </RelativeLayout>-->
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_cardviewplus"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardElevation="27dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/maps_recycle_cardview1"
+android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        app:cardBackgroundColor="#ffffff"
+
+
+        android:background="#ffffff"
+
+        android:thicknessRatio="1.9"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclenitNewsNotify1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+
+            />
+
+
+
+
+        />
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
+
+    <!--
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:elevation="4dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/backbutMaps"
+            android:src="@drawable/back_button"
+
+    android:layout_marginTop="20dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentTop="true">
+
+        </ImageView>
+    -->
+
+    <TextView
+        android:id="@+id/College_list"
+        android:elevation="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:tint="@color/Black"
+        android:textStyle="bold"
+    android:text="Colleges loaded"
+        android:background="@color/White"
+        android:gravity="right"
+android:isScrollContainer="false"
+        android:layout_alignParentRight="true"
+
+android:layout_centerInParent="true"
+
+
+        />
+
+<!--    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="80dp"
+        android:id="@+id/maprelative"
+        android:elevation="4dp"
+
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/action_search"
+            android:src="@drawable/action_search"
+            android:background="#fff"
+            android:padding="4dp"
+
+
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/search_home"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:text="Search for Colleges,Universities....."
+            android:textColor="@color/app_theme"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#fff"
+            android:layout_toRightOf="@+id/action_search"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>-->
+
+<!--        <ProgressBar android:indeterminate="true"
+            android:layout_width="50dp" android:layout_height="50dp"
+            android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+            android:layout_gravity="center"
+
+            android:layout_centerInParent="true"
+            android:theme="@style/AppTheme.AppAccent"
+            android:visibility="gone"
+            />-->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/marker_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        app:indicator="BallPulse"
+        android:visibility="gone"
+        app:indicator_color="@color/app_theme" />
+
+   <!-- <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_main" />-->
+
+</RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|left"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="180dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:visibility="invisible"
+            android:tint="@color/app_theme"
+            app:backgroundTint="@color/white"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/ic_handphone" />
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/cardforphnumber"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardBackgroundColor="#ffffff"
+                android:visibility="gone"
+                android:thicknessRatio="1.9"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cardforphnumbertxt"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|left"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:visibility="invisible"
+            app:elevation="6dp"
+            android:tint="@color/app_theme"
+            app:backgroundTint="@color/white"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/ic_compass" />
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/cardfordirections"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="7dp"
+                app:cardBackgroundColor="#ffffff"
+android:visibility="gone"
+                android:thicknessRatio="1.9"
+                >
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/directionresult1"
+                    android:elevation="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+
+                    android:textColor="@color/app_theme"
+                    android:padding="4dp"
+
+                    />
+                <TextView
+                    android:id="@+id/directionresult2"
+                    android:elevation="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+
+                    android:textColor="@color/app_theme"
+                    android:padding="4dp"
+
+                    />
+                <TextView
+                    android:id="@+id/directionresult3"
+                    android:elevation="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+
+                    android:textColor="@color/app_theme"
+
+                    />
+<!--                <TextView
+                    android:id="@+id/directionresult4"
+                    android:elevation="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+
+                    android:textColor="@color/app_theme"
+                    android:padding="4dp"
+
+                    />-->
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/google_navigate"
+                        android:textSize="16dp"
+                        android:text="@string/start_navigation"
+                       />
+                </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            app:elevation="6dp"
+
+            app:pressedTranslationZ="12dp"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="65dp"
+            android:src="@drawable/ic_add"
+            android:tint="@color/app_theme"
+            app:backgroundTint="@color/white"
+
+            />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:elevation="10dp"
+            android:clickable="true"
+            android:id="@+id/left_draweridmap"
+
+            android:layout_width="280dp"
+            android:scrollbars="vertical"
+            android:layout_gravity="right"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+
+            android:background="@color/white"
+            />
+
+</android.support.v4.widget.DrawerLayout>
+</FrameLayout>

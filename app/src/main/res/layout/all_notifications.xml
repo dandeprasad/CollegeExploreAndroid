@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+    android:background="@drawable/ripple_effect"
+        android:id="@+id/allnotifications">
+
+    <ImageButton
+        android:layout_height="50dp"
+        style="?android:attr/actionButtonStyle"
+        android:layout_width="match_parent"
+        android:src="@drawable/loading_photo"
+        android:id="@+id/imgallnotify"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </ImageButton>
+    <TextView
+        android:id="@+id/textviewtopclgs"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:textSize="12dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="@string/college_explore"
+
+        />
+    </LinearLayout>

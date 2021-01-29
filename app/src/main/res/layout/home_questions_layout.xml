@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.design.widget.CoordinatorLayout
+    android:id="@+id/carrerGuidance_main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/carrerGuidance_layout_upper">
+
+
+
+                <TextView
+                    android:id="@+id/ask_us"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:text="@string/ask_your_question"
+                    android:textColor="#685d53"
+                    android:textSize="20dp"
+
+                    android:layout_centerHorizontal="true"
+                    android:background="#FFF"
+                    android:layout_toRightOf="@+id/action_search"
+android:gravity="center_horizontal"
+
+                    />
+
+            <View
+                android:id="@+id/View_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:padding="0dp"
+                android:elevation="2dp"
+                android:layout_below="@id/ask_us"
+                android:background="@color/view_color_line"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerQuestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:layout_below="@+id/View_line"
+
+/>
+            <ProgressBar android:indeterminate="true"
+                android:layout_width="50dp" android:layout_height="50dp"
+                android:id="@+id/marker_progress_ques" style="?android:attr/progressBarStyle"
+                android:layout_gravity="center"
+
+                android:layout_centerInParent="true"
+                android:theme="@style/AppTheme.AppAccent"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/floating_button"
+        android:background="@color/app_theme"
+android:scaleType="centerCrop"
+
+        android:id="@+id/news_askus"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

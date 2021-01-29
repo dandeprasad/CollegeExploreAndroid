@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:clickable="true"
+        android:layout_weight="5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/RelativeLayout111"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Closeactivitybutton"
+                android:src="@drawable/closebutton"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+            </ImageView>
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/PurenewsToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:elevation="5dp"
+                    app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+            </android.support.design.widget.AppBarLayout>
+            <ImageView
+                android:src="@drawable/userlogo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+
+                android:id="@+id/carduserImageimg" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:textSize="18dp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="2dp"
+                android:text="@string/guest_user"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:layout_below="@+id/carduserImageimg"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/LinearPackedData"
+            android:layout_weight="3"
+            android:layout_height="0dp">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:id="@+id/FrameLayout341"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextInputLayout1"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/name"
+                            android:layout_margin="15dp"
+                            android:fontFamily="monospace"
+
+                            android:layout_height="wrap_content"
+                            android:hint="@string/emailid" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </FrameLayout>
+                <!-- android:drawableLeft="@drawable/user"-->
+                <FrameLayout
+                    android:id="@+id/FrameLayout3241"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/FrameLayout341"
+
+                    android:layout_height="wrap_content" >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextInputLayout2"
+
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/user_password"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="monospace"
+
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="2dp"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                </FrameLayout>
+             /*   android:drawableLeft="@drawable/lock"*/
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FrameLayout3241"
+                    android:id="@+id/forgot_pass"
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="arial"
+
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/forgot_password"/>
+
+
+                <!-- <android.support.design.widget.TextInputLayout
+
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                 <EditText
+                     android:id="@+id/UserMobileNo"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="15dip"
+                     android:paddingRight="15dip"
+                     android:layout_margin="10dp"
+                     android:hint="@string/UserMobileNo" />
+                 </android.support.design.widget.TextInputLayout>
+                 <android.support.design.widget.TextInputLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <EditText
+                         android:id="@+id/EmailLogin"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:paddingLeft="15dip"
+                         android:paddingRight="15dip"
+                         android:layout_margin="10dp"
+                         android:hint="Email ID" />
+
+                 </android.support.design.widget.TextInputLayout>-->
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:orientation="horizontal"
+                    android:id="@+id/LinearLayout2"
+                    android:layout_below="@+id/forgot_pass"
+                    android:background="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+                    <!--        <com.google.android.gms.common.SignInButton
+                                android:id="@+id/sign_in_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:visibility="visible"
+                    android:layout_weight="1"
+                                tools:visibility="gone" />-->
+                    <Button
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/rounded_corner11"
+                        android:onClick="onClick"
+                        android:paddingLeft="4dp"
+                        android:layout_margin="11dp"
+                        android:drawableLeft="@drawable/google_search"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:layout_weight="1"
+                        tools:visibility="gone"
+                        android:text="@string/google"
+                        android:textColor="@color/app_theme"
+                        android:textStyle="bold" />
+                    <FrameLayout
+                        android:id="@+id/FrameLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+
+                        android:layout_margin="11dp"
+                        android:layout_height="wrap_content" >
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/login_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/fb"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner11"
+                            android:paddingLeft="4dp"
+                            android:onClick="onClick"
+                            android:text="@string/facebook"
+                            android:drawableLeft="@drawable/facebook_app_logo"
+                            android:textColor="@color/app_theme"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                    <!--        <com.facebook.login.widget.LoginButton
+
+                                android:id="@+id/login_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+
+
+                                android:minWidth="40dp"
+                                android:text="Signin With Facebook "/>-->
+
+
+
+
+                    <!--            <TextView
+                                    android:id="@+id/status"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="16dp"
+                                    android:paddingRight="16dp"
+                                    android:textColor="#fff"
+                                    android:visibility="gone"
+                                    android:textSize="20sp"/>-->
+                </LinearLayout>
+
+                <Button android:id="@+id/SubmitLogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:elevation="2dp"
+                    android:layout_below="@+id/LinearLayout2"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dip"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@color/app_theme"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SubmitLogin"
+                    android:id="@+id/create_usr_man"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:fontFamily="arial"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/don_t_have_an_account_sign_up"/>
+
+                <!--        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="7dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/create_usr_man"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center_horizontal"
+                                android:fontFamily="arial"
+
+                                android:layout_centerHorizontal="true"
+
+                                android:text="Don't have an account ? Sign Up"/>
+
+
+                        </RelativeLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sign_out_and_disconnect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:visibility="gone"
+            tools:visibility="visible">
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/rounded_corner11"
+                android:id="@+id/carrer_cardview1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="11dp"
+                android:innerRadius="0dp"
+                android:thicknessRatio="1.9"
+                android.support.v7.cardview:contentPadding='2,2,2,2'>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_weight="10"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_theme"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:text="@string/phone"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:focusable="false"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="7"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_theme"
+                        android:layout_weight="2"
+                        android:text="@string/edit"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android.support.v7.cardview="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/rounded_corner11"
+                android:id="@+id/carrer_cardvfiew1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="11dp"
+                android:innerRadius="0dp"
+                android:thicknessRatio="1.9"
+                android.support.v7.cardview:contentPadding='2,2,2,2'>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_weight="10"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_theme"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:padding="3dp"
+                        android:textStyle="bold"
+                        android:text="@string/course"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:focusable="false"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="7"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/app_theme"
+                        android:layout_weight="2"
+                        android:text="@string/edit"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/app_theme"
+                android:layout_margin="11dp"
+                android:drawableLeft="@drawable/google_search"
+                android:drawableStart="@drawable/google_search"
+                android:text="@string/sign_out"
+                android:background="@drawable/rounded_corner11" />
+
+            <Button
+                android:id="@+id/fb_sign_out_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/app_theme"
+                android:layout_margin="11dp"
+                android:drawablePadding="9dp"
+                android:drawableLeft="@drawable/facebook_app_logo"
+                android:drawableStart="@drawable/facebook_app_logo"
+                android:text="@string/sign_out"
+                android:background="@drawable/rounded_corner11" />
+            <Button
+                android:id="@+id/manual_sign_out_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/app_theme"
+                android:layout_margin="11dp"
+                android:text="@string/sign_out"
+                android:background="@drawable/rounded_corner11" />
+
+            <!--    <Button
+                    android:id="@+id/disconnect_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/disconnect"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />-->
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:indeterminate="true"
+        android:layout_width="50dp" android:layout_height="50dp"
+        android:id="@+id/marker_progress" style="?android:attr/progressBarStyle"
+        android:layout_gravity="center"
+
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.AppAccent"
+        android:visibility="gone"
+        />
+</RelativeLayout>
